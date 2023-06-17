@@ -48,15 +48,22 @@ const AppLayout = (props) => {
 
     if (!mounted || status === 'loading') {
         return (
-            <Flex justify="center" align="center" h="100vh" w="full">
-                <Image alt="logo" src="/assets/logo.svg" />
+            <Flex
+                position="relative"
+                justify="center"
+                align="center"
+                h="100vh"
+                w="full"
+            >
+                <Image alt="logo" src="/favicon.ico" h="8" w="8" />
+
                 <Spinner
                     position="absolute"
-                    boxSize={16}
+                    boxSize={12}
                     thickness={2}
                     speed="0.8s"
                     emptyColor="canvas-1"
-                    color="brand.default"
+                    color="accent-1"
                 />
             </Flex>
         )
